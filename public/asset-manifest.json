@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.569df78a.css",
-    "main.js": "/static/js/main.8fd25605.js",
+    "main.css": "/static/css/main.bad2844f.css",
+    "main.js": "/static/js/main.89b584d1.js",
     "static/media/Gilroy-ExtraBold.otf": "/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
+    "static/media/mastercard.svg": "/static/media/mastercard.c4eb28a7fdc14d12fdbd3c50da2d9a82.svg",
     "index.html": "/index.html",
-    "static/media/arrowDown.svg": "/static/media/arrowDown.eaa1dccb1a6d2cdefea0f45ffb0ed723.svg",
-    "static/media/arrowUp.svg": "/static/media/arrowUp.f8d2583bb32ec37ab11de26066fa5622.svg",
+    "static/media/visa.svg": "/static/media/visa.c9833f65d99ba2211156b57d9ac90a4c.svg",
     "static/media/insta.svg": "/static/media/insta.c019492f90b22c2202703bb1b06dab27.svg",
+    "static/media/basket.svg": "/static/media/basket.9af7e77f543c4e27d5aee6b8487d447b.svg",
     "static/media/cancel.svg": "/static/media/cancel.5586c8c46158775472c6c1e1bec2d813.svg",
     "static/media/filter.svg": "/static/media/filter.e7dd2b4a0496898b05cba572d4cd4481.svg",
     "static/media/close.svg": "/static/media/close.35881109c118b25d3a9ae8630fbd094a.svg",
@@ -22,11 +23,11 @@
     "static/media/leftIcon.svg": "/static/media/leftIcon.5ca0b0c480b6430ee6eadc4a2a321fce.svg",
     "static/media/expandMoreIcon.svg": "/static/media/expandMoreIcon.11cd353ea4fd26f73b25964718192a8d.svg",
     "static/media/expandLessIcon.svg": "/static/media/expandLessIcon.25f9b9806a005e77386a1b0caa434699.svg",
-    "main.569df78a.css.map": "/static/css/main.569df78a.css.map",
-    "main.8fd25605.js.map": "/static/js/main.8fd25605.js.map"
+    "main.bad2844f.css.map": "/static/css/main.bad2844f.css.map",
+    "main.89b584d1.js.map": "/static/js/main.89b584d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.569df78a.css",
-    "static/js/main.8fd25605.js"
+    "static/css/main.bad2844f.css",
+    "static/js/main.89b584d1.js"
   ]
 }
