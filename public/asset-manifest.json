@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.810b4b4b.css",
-    "main.js": "/static/js/main.cc01d8a0.js",
+    "main.css": "/static/css/main.9ef257e6.css",
+    "main.js": "/static/js/main.609617a4.js",
     "static/media/Gilroy-ExtraBold.otf": "/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
     "static/media/mastercard.svg": "/static/media/mastercard.c4eb28a7fdc14d12fdbd3c50da2d9a82.svg",
     "index.html": "/index.html",
@@ -23,11 +23,11 @@
     "static/media/leftIcon.svg": "/static/media/leftIcon.5ca0b0c480b6430ee6eadc4a2a321fce.svg",
     "static/media/expandMoreIcon.svg": "/static/media/expandMoreIcon.11cd353ea4fd26f73b25964718192a8d.svg",
     "static/media/expandLessIcon.svg": "/static/media/expandLessIcon.25f9b9806a005e77386a1b0caa434699.svg",
-    "main.810b4b4b.css.map": "/static/css/main.810b4b4b.css.map",
-    "main.cc01d8a0.js.map": "/static/js/main.cc01d8a0.js.map"
+    "main.9ef257e6.css.map": "/static/css/main.9ef257e6.css.map",
+    "main.609617a4.js.map": "/static/js/main.609617a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.810b4b4b.css",
-    "static/js/main.cc01d8a0.js"
+    "static/css/main.9ef257e6.css",
+    "static/js/main.609617a4.js"
   ]
 }
