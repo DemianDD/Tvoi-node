@@ -6,6 +6,8 @@ const path = require('path');
 const cors = require('cors')
 const app = express();
 
+require('dotenv').config();
+
 app.use(express.static(path.join(__dirname + '/public')));
 
 app.use(cors());
@@ -34,8 +36,8 @@ async function sendOrderEmail(order) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "alexxholly11@gmail.com",
-        pass: "mctzcmpnwybnvcqr",
+        user: process.env.EMAIL,
+        pass: process.env.PASS,
       },
     });
 
