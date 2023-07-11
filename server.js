@@ -21,8 +21,6 @@ app.get('*', (req, res) => {
 
 app.post("/order", (req, res) => {
   const order = req.body;
-  console.log("process . Env2");
-  console.log(process.env);
   sendOrderEmail(order)
     .then(() => {
       res.sendStatus(200);
@@ -40,6 +38,7 @@ async function sendOrderEmail(order) {
       auth: {
         user: process.env.EMAIL,
         pass: process.env.PASS,
+        password: process.env.PASS
       },
     });
 
@@ -49,7 +48,6 @@ async function sendOrderEmail(order) {
       subject: "New Order",
       text: JSON.stringify(order, null, 2),
     };
-
     await transporter.sendMail(mailOptions);
   } catch (error) {
     console.error("Error sending order email:", error);
