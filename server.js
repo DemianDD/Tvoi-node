@@ -21,7 +21,8 @@ app.get('*', (req, res) => {
 
 app.post("/order", (req, res) => {
   const order = req.body;
-
+  console.log("process . Env2");
+  console.log(process.env);
   sendOrderEmail(order)
     .then(() => {
       res.sendStatus(200);
