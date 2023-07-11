@@ -2,16 +2,22 @@ const express = require('express');
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 
+
 const path = require('path');
 const cors = require('cors')
 const app = express();
 
 require('dotenv').config();
 
+app.use(express.static(path.join(__dirname + '/front')));
 
 app.use(cors());
 
 app.use(bodyParser.json());
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'front', 'index.html'));
+});
 
 app.post("/order", (req, res) => {
   const order = req.body;
