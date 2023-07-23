@@ -1,21 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.74577f01.css",
-    "main.js": "/static/js/main.363abcf3.js",
+    "main.css": "/static/css/main.830487bf.css",
+    "main.js": "/static/js/main.b84773b1.js",
     "static/media/Gilroy-ExtraBold.otf": "/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
     "static/media/addcart.svg": "/static/media/addcart.8564c668f3bc6b3d9bdf6f1e7029e836.svg",
     "static/media/bill.svg": "/static/media/bill.e71730d99ee0234e3e4fd24d1ff0afbe.svg",
     "index.html": "/index.html",
     "static/media/buy.svg": "/static/media/buy.175f5b73664e8afb18f332218ed2df92.svg",
-    "static/media/priceDown.svg": "/static/media/priceDown.7d3231441ad7d588b3ea87570615fac9.svg",
-    "static/media/random.svg": "/static/media/random.eeed4da12bd8e10b73949b76df1bf12e.svg",
     "static/media/user.svg": "/static/media/user.c3efefd93b22b663b51eb9fa778d11c5.svg",
     "static/media/emptyCart.svg": "/static/media/emptyCart.87daf23a9f02a4e179db192e5d50909d.svg",
+    "static/media/real_photo.svg": "/static/media/real_photo.80d908d9c7829042233727b467a87094.svg",
     "static/media/insta.svg": "/static/media/insta.c019492f90b22c2202703bb1b06dab27.svg",
-    "static/media/priceUp.svg": "/static/media/priceUp.8ab85e3314b094c4058263e067dd3a04.svg",
     "static/media/basket.svg": "/static/media/basket.cd558b21bbb40ed71b624cc223dce3f1.svg",
     "static/media/cancel.svg": "/static/media/cancel.5586c8c46158775472c6c1e1bec2d813.svg",
-    "static/media/filter.svg": "/static/media/filter.e7dd2b4a0496898b05cba572d4cd4481.svg",
     "static/media/close.svg": "/static/media/close.35881109c118b25d3a9ae8630fbd094a.svg",
     "static/media/phone.svg": "/static/media/phone.c5b0e34f8a92f6c01c29ae3980870bda.svg",
     "static/media/blueCircle.svg": "/static/media/blueCircle.c3e6b8f1b7c13c9747261c49dd628a03.svg",
@@ -27,13 +24,11 @@
     "static/media/delete.svg": "/static/media/delete.1fddfe71e4017c1a79c77f3d6d18f7bc.svg",
     "static/media/rightIcon.svg": "/static/media/rightIcon.aa9fa006af6641d5a7f97798f30632b7.svg",
     "static/media/leftIcon.svg": "/static/media/leftIcon.5ca0b0c480b6430ee6eadc4a2a321fce.svg",
-    "static/media/expandMoreIcon.svg": "/static/media/expandMoreIcon.11cd353ea4fd26f73b25964718192a8d.svg",
-    "static/media/expandLessIcon.svg": "/static/media/expandLessIcon.25f9b9806a005e77386a1b0caa434699.svg",
-    "main.74577f01.css.map": "/static/css/main.74577f01.css.map",
-    "main.363abcf3.js.map": "/static/js/main.363abcf3.js.map"
+    "main.830487bf.css.map": "/static/css/main.830487bf.css.map",
+    "main.b84773b1.js.map": "/static/js/main.b84773b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.74577f01.css",
-    "static/js/main.363abcf3.js"
+    "static/css/main.830487bf.css",
+    "static/js/main.b84773b1.js"
   ]
 }
