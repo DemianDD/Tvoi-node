@@ -11,7 +11,7 @@ function generateHtmlFromOrder(order) {
                 ${order.products && order.products.length
                     ? order.products.map((product) => {
                         return `
-                            <h4>${product.labelName}</h4>
+                            <h4>&#9679 ${product.labelName}</h4>
                             <sup>#${product.id}</sup>
                             <div><strong>Колір:</strong> ${product.color}</div>
                             <div><strong>Розмір:</strong> ${product.size}</div>
