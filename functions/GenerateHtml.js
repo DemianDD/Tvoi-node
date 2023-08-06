@@ -17,8 +17,7 @@ function generateHtmlFromOrder(order) {
                             <div><strong>Розмір:</strong> ${product.size}</div>
                             <div><strong>Кількість:</strong> x${product.count}</div>
                             <br />
-                            <div><strong>До сплати: ${product.salePrice > 0 ? product.salePrice : product.price} грн </strong> </div>
-                            <sub> *${order.paymentMethod}</sub>
+                            
                         `;
                     }).join('')
                     : "No products in the order"
@@ -30,6 +29,10 @@ function generateHtmlFromOrder(order) {
                 <div><strong> Номер телефону: </strong> ${order.phone}</div>
                 <div><strong>Місто: </strong> ${order.town}</div>
                 <div><strong>Номер відділення:</strong> ${order.postOffice}</div>
+                <br/>
+                
+                <div><strong>До сплати: ${order.summary} грн </strong> </div>
+                <sub> *${order.paymentMethod}</sub>
                 <br/>
 
                 <p><sup>Маєте запитання? - <a href="https://www.instagram.com/love.tvoi/?igshid=YmMyMTA2M2Y%3D">Напишіть нам сюди</a></sup></p>
