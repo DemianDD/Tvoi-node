@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 
+const generateHtmlFromOrder = require('./functions/GenerateHtml');
+const formatDate = require('./functions/Formatter');
 
 const path = require('path');
 const cors = require('cors')
@@ -31,7 +33,10 @@ app.post("/order", (req, res) => {
     });
 });
 
+const currentDate = formatDate(new Date());
+
 async function sendOrderEmail(order) {
+  const htmlContent = generateHtmlFromOrder(order);
   try {
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -44,9 +49,9 @@ async function sendOrderEmail(order) {
 
     const mailOptions = {
       from: "alexxholly11@gmail.com",
-      to: "tvoishopua@gmail.com",
-      subject: "New Order",
-      text: JSON.stringify(order, null, 2),
+      to: "tvoishopua@gmail.com, " + order.email,
+      subject: "TVOI | Нове замовлення від " + currentDate,
+      html: htmlContent,
     };
     await transporter.sendMail(mailOptions);
   } catch (error) {
