@@ -11,12 +11,12 @@ function generateHtmlFromOrder(order) {
                 ${order.products && order.products.length
                     ? order.products.map((product) => {
                         return `
-                            <h4>&#9679 ${product.labelName}</h4>
-                            <sup>#${product.id}</sup>
+                            <h4># ${product.labelName}</h4>
+                            <sup>##${product.id}</sup>
                             <div><strong>Колір:</strong> ${product.color}</div>
                             <div><strong>Розмір:</strong> ${product.size}</div>
                             <div><strong>Кількість:</strong> x${product.count}</div>
-                            <br />
+                            <hr />
                             
                         `;
                     }).join('')
@@ -30,7 +30,7 @@ function generateHtmlFromOrder(order) {
                 <div><strong>Місто: </strong> ${order.town}</div>
                 <div><strong>Номер відділення:</strong> ${order.postOffice}</div>
                 <br/>
-                
+
                 <div><strong>До сплати: ${order.summary} грн </strong> </div>
                 <sub> *${order.paymentMethod}</sub>
                 <br/>
