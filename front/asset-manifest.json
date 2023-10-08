@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e16ea15.css",
-    "main.js": "/static/js/main.7de29a68.js",
+    "main.css": "/static/css/main.6eae9630.css",
+    "main.js": "/static/js/main.3d1969c6.js",
     "static/media/Gilroy-ExtraBold.otf": "/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
     "static/media/addcart.svg": "/static/media/addcart.8564c668f3bc6b3d9bdf6f1e7029e836.svg",
     "static/media/bill.svg": "/static/media/bill.e71730d99ee0234e3e4fd24d1ff0afbe.svg",
     "index.html": "/index.html",
     "static/media/buy.svg": "/static/media/buy.175f5b73664e8afb18f332218ed2df92.svg",
+    "static/media/real_photo.svg": "/static/media/real_photo.af38087fe5fbc5577d5504d5fd506284.svg",
     "static/media/user.svg": "/static/media/user.c3efefd93b22b663b51eb9fa778d11c5.svg",
     "static/media/emptyCart.svg": "/static/media/emptyCart.681cd917008078ad8f30808f8ddcbf5a.svg",
-    "static/media/real_photo.svg": "/static/media/real_photo.6b0319d674b065478dc8b84bf191aad8.svg",
     "static/media/insta.svg": "/static/media/insta.c019492f90b22c2202703bb1b06dab27.svg",
     "static/media/basket.svg": "/static/media/basket.cd558b21bbb40ed71b624cc223dce3f1.svg",
     "static/media/cancel.svg": "/static/media/cancel.5586c8c46158775472c6c1e1bec2d813.svg",
@@ -22,13 +22,13 @@
     "static/media/cart.svg": "/static/media/cart.01fb18c27d34402090d2c5ae2d259b6f.svg",
     "static/media/search.svg": "/static/media/search.3ec82d0249294142114fd9980410b4f8.svg",
     "static/media/delete.svg": "/static/media/delete.1fddfe71e4017c1a79c77f3d6d18f7bc.svg",
-    "static/media/rightIcon.svg": "/static/media/rightIcon.aa9fa006af6641d5a7f97798f30632b7.svg",
-    "static/media/leftIcon.svg": "/static/media/leftIcon.5ca0b0c480b6430ee6eadc4a2a321fce.svg",
-    "main.9e16ea15.css.map": "/static/css/main.9e16ea15.css.map",
-    "main.7de29a68.js.map": "/static/js/main.7de29a68.js.map"
+    "static/media/rightIcon.svg": "/static/media/rightIcon.16244d2b8fe0b09a05b1c00bbd17e193.svg",
+    "static/media/leftIcon.svg": "/static/media/leftIcon.0453b25bda7b3aaa0ebe3f1dd4179ba9.svg",
+    "main.6eae9630.css.map": "/static/css/main.6eae9630.css.map",
+    "main.3d1969c6.js.map": "/static/js/main.3d1969c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e16ea15.css",
-    "static/js/main.7de29a68.js"
+    "static/css/main.6eae9630.css",
+    "static/js/main.3d1969c6.js"
   ]
 }
