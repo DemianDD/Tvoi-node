@@ -9,7 +9,7 @@ const options = {
       description: 'API documentation for your Node.js application',
     },
   },
-  apis: ['./routes/*.js'], // Use the path to your route files
+  apis: ['./*.js'], // Use the path to your route files
 };
 
 module.exports = swaggerJsdoc(options);

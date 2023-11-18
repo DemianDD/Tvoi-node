@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 //const { sequelize } = require('./sequalize/models/index');
 
-const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 
 const generateHtmlFromOrder = require('./functions/GenerateHtml');
@@ -18,23 +17,7 @@ const router = express.Router();
 
 require('dotenv').config();
 
-const swaggerOptions = {
-  swaggerDefinition: {
-    openapi: '3.0.0',
-    info: {
-      title: 'TVOI testing engine',
-      version: '1.0.0'
-    },
-    servers: [
-      {
-        api: 'http://localhost:10000'
-      }
-    ]
-  },
-  apis: ['server.js'], 
-};
-
-const swaggerSpec = swaggerJSDoc(swaggerOptions);
+const swaggerSpec = require('./swaggerConfig');
 
 app.use('/api', router);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
@@ -42,8 +25,8 @@ app.use(express.static(path.join(__dirname + '/front')));
 app.use(cors());
 app.use(bodyParser.json());
 
-router.get('/api/getAllProducts', getAllProducts);
-router.post('/api/postProduct', postProduct);
+router.get('/getAllProducts', getAllProducts);
+router.post('/postProduct', postProduct);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'front', 'index.html'));
