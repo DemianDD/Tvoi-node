@@ -1,8 +1,8 @@
-const { product } = require('../sequalize/models/product'); 
+const db = require('../sequalize/models/index'); 
 
 const getAllProducts = async (req, res) => {
     try {
-        const products = await product?.findAll();
+        const products = await db.Product?.findAll();
         res.json(products);
     } catch (error) {
         console.error('Error while getting products:', error);
@@ -12,7 +12,7 @@ const getAllProducts = async (req, res) => {
 
 const postProduct = async (req, res) => {
     try {
-        const newProduct = await product?.create(req.body);
+        const newProduct = await db.Product?.create(req.body);
         res.json(newProduct);
     } catch (error) {
         console.error('Error while creating a product:', error);
