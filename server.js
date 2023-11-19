@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-//const { sequelize } = require('./sequalize/models/index');
 
 const swaggerUi = require('swagger-ui-express');
 
@@ -75,7 +74,6 @@ const connectDb = async () => {
   console.log('Checking database connection...');
 
   try {
-    //await sequelize.authenticate();
     console.log('DB success');
   } catch(e) {
     console.log('DB failed', e);
