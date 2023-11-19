@@ -6,7 +6,6 @@ const swaggerUi = require('swagger-ui-express');
 
 const generateHtmlFromOrder = require('./functions/GenerateHtml');
 const formatDate = require('./functions/Formatter');
-const { getAllProducts, postProduct } = require('./controllers/ProductController');
 
 const path = require('path');
 const cors = require('cors')
@@ -23,9 +22,6 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use(express.static(path.join(__dirname + '/front')));
 app.use(cors());
 app.use(bodyParser.json());
-
-router.get('/getAllProducts', getAllProducts);
-router.post('/postProduct', postProduct);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'front', 'index.html'));
