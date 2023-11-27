@@ -1,11 +1,11 @@
 const express = require('express');
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-
-const swaggerUi = require('swagger-ui-express');
+const { sequelize } = require('./sequelize/models');
 
 const generateHtmlFromOrder = require('./functions/GenerateHtml');
 const formatDate = require('./functions/Formatter');
+const { getAllProducts, postProduct, deleteProduct, deleteAllProducts } = require('./controllers/ProductController');
 
 const path = require('path');
 const cors = require('cors')
@@ -15,13 +15,17 @@ const router = express.Router();
 
 require('dotenv').config();
 
-const swaggerSpec = require('./swaggerConfig');
-
-app.use('/api', router);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-app.use(express.static(path.join(__dirname + '/front')));
-app.use(cors());
+app.use(cors({origin: '*'}))
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(express.static(path.join(__dirname + '/front')));
+app.use('/api', router);
+
+
+router.get('/getAllProducts', getAllProducts);
+router.post('/postProduct', postProduct);
+router.delete('/deleteProduct/:id', deleteProduct);
+router.delete('/deleteAllProducts', deleteAllProducts);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'front', 'index.html'));
@@ -68,11 +72,11 @@ async function sendOrderEmail(order) {
 
 const connectDb = async () => {
   console.log('Checking database connection...');
-
   try {
-    console.log('DB success');
-  } catch(e) {
-    console.log('DB failed', e);
+    await sequelize.authenticate();
+    console.log('DB connection successful');
+  } catch (error) {
+    console.error('DB connection failed:', error);
     process.exit(1);
   }
 };
